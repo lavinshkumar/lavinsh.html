@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="water.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navbars..!!..!! -->
+    <nav class="navbar">
+        <a href="#" class="logo">LOVELY</a>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- Home Section..!! -->
+    <section id="home" class="home">
+        <!-- image -->
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="lks2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="home-info">
+            <h1>Lavinsh Kumar </h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:3;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:2;" data-text="Designer">Designer</span>
+                <span style="--i:1;" data-text="Artist">Artist</span>
+            </h2>
+            <p>~ A passionate and dedicated junior web developer ,driven by the ever-evolving world of technology and its limitless possibilities.!</p>
+            <div class="btn-sci">
+                <a href="cv.pdf" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/lavinsh-kumar-14b34b301" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lavinsh-kumar-14b34b301/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section..!! -->
+    <section id="about" class="about">
+        <div class="img-about">
+            <img src="lks.jpeg">
+        </div>
+        <div class="about-content">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <p>I'm a developer passionate about crafting accesible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favourite work lies at the intersection of design and development, creating experineces that not only
+                look great but are meticulosly built for performance and usability.</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Read More!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section..!! -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>Technical and Professional</span>
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>100%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVASCRIPT</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>MY SQL</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="mysql"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="85"></div>
+                        <div class="text">
+                            <big>60%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>100%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="88"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="main-text">
+            <span>What I will do for you</span>
+            <h2>Latest Projects</h2>
+        </div>
+        <div class="container">
+            <!-- <div class="filter-buttons">
+            <button class="btn" data-filter="all">All</button>
+            <button class="btn" data-filter=".product">Product</button>
+            <button class="btn" data-filter=".inter">Interactive</button>
+            <button class="btn" data-filter=".web">Web App</button>
+        </div> -->
+
+            <div class="portfolio-gallery">
+                <!-- Project Box 1 -->
+                <div class="port-box ">
+                    <div class="port-image">
+                        <img src="img_1.png" alt="">
+                    </div>
+
+                    <!-- Project Box 2 -->
+                    <div class="port-box">
+                        <div class="port-image">
+                            <img src="img_2.png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h3>Calculator</h3>
+                            <p>The Calculator is a simple web-based application built using HTML , CSS and JAVASCRIPT. It features a clean and responsive user interface that allows users to perform basic arithmetic operations such as addition, subtraction,
+                                multiplication, and division.</p>
+                            <a href="https://github.com/NishitaRepository/Calculator"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Box 4 -->
+                    <div class="port-box ">
+                        <div class="port-image">
+                            <img src="img_4.png" alt="">
+                        </div>
+                        <div class="port-content">
+                            <h3>PW Clone</h3>
+                            <p>The PW Skills Clone is a front-end project that replicates the layout and design of the PW Skills website using HTML, CSS, and Tailwind CSS. The goal of this clone is to practice responsive web design and master utility-first
+                                styling with Tailwind.</p>
+                            <a href="https://github.com/NishitaRepository/PW-Skills"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+        <div class="main-text">
+            <span>Ask Me Question</span>
+            <h2>Contact Me</h2>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="btn-box formbtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <p>Copyright &copy; 2025 by Lavinsh Kumar || All Rights Reserved</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
